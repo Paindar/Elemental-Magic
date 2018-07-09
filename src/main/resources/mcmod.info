@@ -1,0 +1,16 @@
+[
+{
+  "modid": "elementalmagic",
+  "name": "Elemental Magic",
+  "description": "Searching for the elemental.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Paindar"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
