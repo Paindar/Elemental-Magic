@@ -2,15 +2,12 @@ package me.paindar.utils.s11n;
 
 import com.google.common.base.Preconditions;
 import me.paindar.ElementalMagic;
-import net.minecraft.nbt.NBTBase;
 import net.minecraft.nbt.NBTTagCompound;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class S11nConverter
@@ -36,8 +33,6 @@ public class S11nConverter
         }
         else if(type.isArray())
         {
-            Class baseType = type.getComponentType();
-
             NBTTagCompound subTag = new NBTTagCompound();
 
             int length = Array.getLength(obj);
