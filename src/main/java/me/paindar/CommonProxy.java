@@ -7,6 +7,7 @@ import me.paindar.data.IExternalData;
 import me.paindar.event.EventHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.CapabilityManager;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class CommonProxy
@@ -15,6 +16,10 @@ public class CommonProxy
     {
         CapabilityManager.INSTANCE.register(IExternalData.class, new ExternalDataStorage(), ExternalData::new);
         MinecraftForge.EVENT_BUS.register(new EventHandler());
+    }
+
+    public void init(FMLInitializationEvent event)
+    {
     }
 
 }

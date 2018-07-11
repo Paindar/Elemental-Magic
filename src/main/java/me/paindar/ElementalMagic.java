@@ -15,7 +15,7 @@ public class ElementalMagic
     public static final String VERSION = "1.0";
 
     public static Logger logger;
-    @SidedProxy(serverSide = "me.paindar.CommonProxy", clientSide = "me.paindar.CommonProxy")
+    @SidedProxy(serverSide = "me.paindar.CommonProxy", clientSide = "me.paindar.ClientProxy")
     public static CommonProxy proxy;
 
     @EventHandler
@@ -28,5 +28,6 @@ public class ElementalMagic
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+        proxy.init(event);
     }
 }
