@@ -1,7 +1,7 @@
 package me.paindar;
 
+import me.paindar.client.gui.GuiLoader;
 import me.paindar.data.ExternalData;
-import me.paindar.data.ExternalDataProvider;
 import me.paindar.data.ExternalDataStorage;
 import me.paindar.data.IExternalData;
 import me.paindar.event.EventHandler;

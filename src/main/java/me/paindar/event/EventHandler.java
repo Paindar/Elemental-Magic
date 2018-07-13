@@ -4,6 +4,7 @@ import me.paindar.ElementalMagic;
 import me.paindar.data.ExternalDataProvider;
 import me.paindar.data.IExternalData;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
@@ -19,7 +20,7 @@ public class EventHandler
     @SubscribeEvent
     public void attachCapability(AttachCapabilitiesEvent<Entity> event)
     {
-        if (!(event.getObject() instanceof EntityPlayer)) return;
+        if (!(event.getObject() instanceof EntityLiving)) return;
 
         event.addCapability(ED_CAP, new ExternalDataProvider());
     }
