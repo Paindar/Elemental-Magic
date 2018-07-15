@@ -33,6 +33,8 @@ public class KeyLoader
         {
             logger.info("rua");
 
+            EntityPlayer player = Minecraft.getMinecraft().player;
+            player.openGui(ElementalMagic.instance, GuiLoader.GUI_ELEMENT_TREE, player.world, (int)player.posX, (int)player.posY, (int)player.posZ);
         }
     }
 }
