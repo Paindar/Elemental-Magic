@@ -5,7 +5,7 @@ public abstract class Component
     private String name = "";
     public int x,y;
     public Component(){}
-    public Component(String name){this.name = name;}
+    protected Component(String name){this.name = name;}
     public String getName(){return name;}
 
     public abstract void draw(float partialTicks, int x, int y);
